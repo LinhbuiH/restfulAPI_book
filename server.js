@@ -7,8 +7,8 @@ const PORT = process.env.port;
 const Data = 'book.json';
 const router = require('./src/router');
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+/*app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());*/
 
 app.get('/book',(req,res) => {
     res.send(Data)
